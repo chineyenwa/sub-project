@@ -1,0 +1,247 @@
+<!doctype html>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>cars</title>
+		<style media="screen">
+			body{
+				padding: 0;
+				margin: 0;
+				height: 100vh;
+				background-color: darkslategrey;
+
+				overflow: ;
+			}
+			.main-div{
+				height: 63%;
+				width: 43%;
+				margin: 50px auto;
+				overflow: hidden;
+				position: relative;
+				top: %;
+				right: 20%;
+				background-color: darkslategrey;
+			}
+			#right{
+				height: 65%;
+				width: 45%;
+				margin: 50px auto;
+				overflow: hidden;
+				position: relative;
+				bottom: 70%;
+				left: 28%;
+			}
+			#sale{
+				font-size: 38px;
+				color: #800000;
+				font-family: monospace;
+				font-weight: 600;
+
+			}
+			.lim{
+				color: white;
+				font-size: 45px;
+				font-weight: 600;
+				line-height: -0px;
+				font-family: serif;
+			}
+			.main-div .sub-div{
+				height: calc(20% - 5px);
+				width: 100%;
+				display: flex;
+				align-items: flex-start;
+				justify-content: space-between;
+				position: absolute;
+				bottom: 4px;
+				left: 0;
+				
+			}
+			.main-div .sub-div > img{
+				height:  100%;
+				width: calc(20% - 5px);
+				border: 1px solid black;
+				border-radius: 1em 1em 1em 1em;
+				object-fit: cover;
+				cursor: pointer;
+				box-shadow: 0px 0px 0px #333;
+			}
+			.main-div .sub-div > img:hover{
+				filter: grayscale(50%);
+				border: 2px solid darkred;
+			}
+			.big-screen{
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: calc(80% - 10px);
+				width: calc(100% - 7px);
+				
+				
+			}
+			.big-screen > img{
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+				border: 2px black;
+				border-radius: 2em 2em 2em 2em;
+			}
+			.top{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				
+				font-size: 20px;
+				color: white;
+			}
+			.sub-top{
+				display: flex;
+				flex-direction: row;
+                justify-content: space-evenly;
+                width: 37%;
+			}
+			#car{
+				position: relative;
+				left: 20%;
+				
+			}
+			#mod{	
+ 			position: relative;
+				left: 25%;
+                top: 15px;
+			}
+		#col{
+				position: relative;
+				left: 30%;
+				top: 15px;
+			}
+			#con{
+				position: relative;
+				left: 35%;
+				top: 15px;
+			}
+			#abo{
+				position: relative;
+				left: 40%;
+				top: 15px;
+			}
+			#line{
+				width: 100%;
+				height: 2px;
+				background-color: white;
+				position: relative;
+				top: 0%;
+
+			}
+			 
+              .end{
+              	
+               	
+              	display: flex;
+              	flex-direction: row;
+              	justify-content: space-evenly;
+              	position: relative;
+              	width: 30%;
+              	top: 15px;
+              	right: 5%;
+              	
+                
+              }  
+			}
+			#mine{                
+                width: 20px;
+                height: 20px;
+			}
+			#pix{
+				position: relative;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+			}
+			p{
+				line-height: 3px;
+				color: white;
+				font-size: 20px;
+			}
+			button{
+				background-color: #800000;
+				color: white;
+				border: 1px solid #800;
+			}
+			#butt{
+				position: relative;
+				left: 4%;
+				bottom: 2%;
+				border-radius: 0.3em 0.3em 0.3em 0.3em;
+			}
+			#buttu{
+				padding-top: 10px;
+				padding-right: 60px;
+				padding-left: 60px;
+				padding-bottom: 10px;
+				border-radius: 0.4em;
+				position: relative;
+				left: 5%;
+			}
+			#butto{
+				padding-top: 10px;
+				padding-right: 25px;
+				padding-left: 25px;
+				padding-bottom: 10px;
+				border-radius: 0.4em;
+			}
+			#money{
+				font-weight: 700;
+				font-size: 35px;
+			}
+
+		</style>
+		<script src="jquery.js" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		<div class="top">
+			<div class="sub-top">
+				<h3 id="car">Vintage Wheels!</h3>
+				<p id="mod">Models</p>
+				<p id="col">Collections</p>
+				<p id="con">Contact</p>
+				<p id="abo">About</p>
+	</div>
+				<div class="end">
+				<p id ="mine">Select</p>
+					<img src="C:\Users\Cherish\Downloads\pexels-pascal-claivaz-238226.jpg" id="pix">
+				</div>
+				</div>
+			
+			<div id="line"></div>
+		<div class="main-div">
+			<div class="big-screen">
+				<img src="C:\Users\Cherish\Downloads\pexels-alexgtacar-1592384.jpg" id="item">
+			</div>
+			<div class="sub-div">
+			<img  src="C:\Users\Cherish\Downloads\pexels-nordic-overdrive-627678.jpg" onclick="document.getElementById('item').src='C:/Users/Cherish/Downloads/pexels-nordic-overdrive-627678.jpg'">
+            <img src="C:\Users\Cherish\Downloads\pexels-nordic-overdrive-627680.jpg" onclick="document.getElementById('item').src='C:/Users/Cherish/Downloads/pexels-nordic-overdrive-627680.jpg'">
+				<img src="C:\Users\Cherish\Downloads\pexels-alexgtacar-1592384.jpg" onclick="document.getElementById('item').src='C:/Users/Cherish/Downloads/pexels-alexgtacar-1592384.jpg'">
+				<img src="C:\Users\Cherish\Downloads\pexels-quintin-gellar-631522.jpg" onclick="document.getElementById('item').src='C:/Users/Cherish/Downloads/pexels-quintin-gellar-631522.jpg'">
+		</div>
+	</div>
+	<div id="right">
+		<p id="sale">CARS FOR SALE</p>
+		<p class='lim'>Limited Bonus</p> <p class="lim">Offer</p>
+		<p>get the best car deals here at wheeels </p><p>we have a wide variety ranging from </p>
+		<p>vintage cars to sport cars</p>
+		<p>feel the fun!</p>
+		<p id="money">$10000000 <button id="butt">-50%</button></p>
+		<p><s>$20000000</s></p>
+		<div>
+			<button id="butto">-  +  -</button>
+			<button id="buttu">add to cart</button>
+		</div>
+	</div>
+    </body>
+	
+
+	
+	</html>
